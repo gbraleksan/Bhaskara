@@ -3,30 +3,9 @@ from time import sleep
 print("-=-"*14)
 print(" "*15, "Bhaskara")
 print("-=-"*14)
-a=(input("Digite o valor de A: "))
-b=(input("Digite o valor de B: "))
-c=(input("Digite o valor de C: "))
-# ----------------------------
-
-
-if a.isnumeric():
-    a = int(a)
-if b.isnumeric():
-    b = int(b)
-if c.isnumeric():
-    c = int(c)
-if type(a) == str:
-    a = 0
-    a == int
-if type(b) == str:
-    b = 0
-    b == int
-if type(c) == str:
-    c = 0
-    c == int
-
-
-# ---------------------------------
+a=int(input("Digite o valor de A: "))
+b=int(input("Digite o valor de B: "))
+c=int(input("Digite o valor de C: "))
 sleep (0.5)
 print (" ")
 print ("{}x² + {}x + {} = 0".format(a,b,c))
@@ -52,7 +31,7 @@ if a == 0:
     x2= (-b - sqrt(delta))
     print ("x' = {:.2f}".format(x1))
     print ('x" = {:.2f}'.format(x2))
-elif delta < 0:
+if delta < 0:
     print("∆ = {:.0f}".format(delta))
     print (" ")
     sleep (0.5)
